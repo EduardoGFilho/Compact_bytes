@@ -1,5 +1,5 @@
 import numpy as np
-from compact_bytes_v3 import *
+from compact_bytes import *
 from numpy.random import randint
 import matplotlib.pyplot as plt
 
