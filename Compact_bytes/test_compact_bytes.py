@@ -3,8 +3,8 @@ from compact_bytes import *
 from numpy.random import randint
 import matplotlib.pyplot as plt
 
-n = 5 # Minimum number of bits to represent the numbers, n<8
-x = randint(low = 0, high = 2**n, size = 100, dtype = np.uint8)
+n = 5  # Minimum number of bits to represent the numbers, n<8
+x = randint(low=0, high=2**n, size=100, dtype=np.uint8)
 compressed = compact_bytes(x, n)
 uncompressed = decompact_bytes(compressed, n)
 
